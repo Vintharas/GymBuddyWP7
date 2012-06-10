@@ -7,3 +7,7 @@ TestResults
 
 # dotCover
 *.dotCover
+
+
+# ncrunch
+*.ncrunchsolution
