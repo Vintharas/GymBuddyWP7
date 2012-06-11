@@ -33,7 +33,17 @@
             </controls:Panorama.Title>
  
             <!--Today item-->
-            <controls:PanoramaItem Header="today">
+            <controls:PanoramaItem>
+                <controls:PanoramaItem.HeaderTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock>today</TextBlock>
+                            <TextBlock Foreground="#999999" FontSize="32" VerticalAlignment="Bottom" Margin="5, 10">
+                                10th June
+                            </TextBlock>
+                        </StackPanel>
+                    </DataTemplate>
+                </controls:PanoramaItem.HeaderTemplate>
                 <!--Double line list with text wrapping-->
                 <StackPanel>
                     <Button Foreground="{StaticResource AppForegroundBrush}">
